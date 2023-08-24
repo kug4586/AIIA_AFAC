@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_naver_map/flutter_naver_map.dart';
-import 'package:my_app/config/data.dart';
 
 import 'package:my_app/screen/home_screen.dart';
 
@@ -20,25 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,  // 디버깅 중인지 표시
       title: "Gachon Promotion",  // 앱 이름
-      home: Intro() // 앱 시작 화면
-    );
-  }
-}
-
-class Intro extends StatelessWidget {
-  const Intro({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: Background,
-        child: SafeArea(
-          child: Center(
-
-          )
-        )
-      )
+      home: HomeScreen() // 앱 시작 화면
     );
   }
 }
